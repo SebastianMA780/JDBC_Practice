@@ -1,4 +1,4 @@
-package Tables.Suppliers;
+package Tables.Expenses;
 import Connection.ConnectingDB;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -6,22 +6,23 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Scanner;
 
-public class SuppliersDataBaseManage {
+public class ExpensesD_B_Manage {
     private static ConnectingDB db_conect = new ConnectingDB();
     private static PreparedStatement ps = null;
     private static ResultSet rs = null;
     public static Scanner sc = new Scanner(System.in);
 
-    public static void createData(Suppliers supplier) {
+    public static void createData(Expenses expense) {
         try (Connection ConnectingDB = db_conect.get_connection()) {
 
             try {
-                String query = "INSERT INTO `proveedores` (`nombre`,`telefono`) VALUES (?, ?)";
+                String query = "INSERT INTO `gastos` (`cantidad`,`valor`,`material_id`) VALUES (?, ?, ?)";
                 ps = ConnectingDB.prepareStatement(query);
-                ps.setString(1, supplier.getNombre());
-                ps.setInt(2, supplier.getTelefono());
+                ps.setString(1, expense.getQuantity());
+                ps.setInt(2, expense.getAmount());
+                ps.setInt(3, expense.getMaterial_id());
                 ps.executeUpdate();
-                System.out.println("El proveedor ha sido creado con éxito");
+                System.out.println("Su gasto ha sido registrado");
             } catch (SQLException ex) {
                 System.out.println(ex);
 
@@ -31,4 +32,3 @@ public class SuppliersDataBaseManage {
         }
     }
 }
-

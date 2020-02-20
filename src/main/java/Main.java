@@ -1,3 +1,7 @@
+import Tables.Expenses.Expenses;
+import Tables.Income.Income;
+import Tables.Materials.Materials;
+import Tables.Products.Products;
 import Tables.Suppliers.Suppliers;
 
 
@@ -19,6 +23,7 @@ public class Main {
     public static void main(String[] args) {
 
         int optionOuterMenu = 0;
+        int optionInnerMenu = 0;
 
             do {
                 System.out.println("|" + "------------------------------------------" + "|");
@@ -39,19 +44,87 @@ public class Main {
                       break;
                   case 2:
                       PrintMenu();
+                      optionInnerMenu = sc.nextInt();
+                      switch (optionInnerMenu) {
+                          case 1:
+                              Income.create();
+                              break;
+                          case 2:
+                              System.out.println("Reading");
+                              break;
+                          case 3:
+                              System.out.println("Updating");
+                              break;
+                          case 4:
+                              System.out.println("Deleting");
+                              break;
+                          default:
+                              break;
+                      }
                       break;
                   case 3:
                       PrintMenu();
+                       optionInnerMenu = sc.nextInt();
+                      switch (optionInnerMenu) {
+                          case 1:
+                              Products.create();
+                              break;
+                          case 2:
+                              System.out.println("Reading");
+                              break;
+                          case 3:
+                              System.out.println("Updating");
+                              break;
+                          case 4:
+                              System.out.println("Deleting");
+                              break;
+                          default:
+                              break;
+                      }
                       break;
                   case 4:
                       PrintMenu();
+                      optionInnerMenu = sc.nextInt();
+                      switch (optionInnerMenu) {
+                          case 1:
+                              Expenses.create();
+                              break;
+                          case 2:
+                              System.out.println("Reading");
+                              break;
+                          case 3:
+                              System.out.println("Updating");
+                              break;
+                          case 4:
+                              System.out.println("Deleting");
+                              break;
+                          default:
+                              break;
+                      }
                       break;
                   case 5:
                       PrintMenu();
+                      optionInnerMenu = sc.nextInt();
+                      switch (optionInnerMenu) {
+                          case 1:
+                              Materials.create();
+                              break;
+                          case 2:
+                              System.out.println("Reading");
+                              break;
+                          case 3:
+                              System.out.println("Updating");
+                              break;
+                          case 4:
+                              System.out.println("Deleting");
+                              break;
+                          default:
+                              break;
+                      }
                       break;
                   case 6:
                       PrintMenu();
-                     int optionInnerMenu = sc.nextInt();
+                      optionInnerMenu = sc.nextInt();
                       switch (optionInnerMenu) {
                           case 1:
                               Suppliers.create();
@@ -74,10 +147,5 @@ public class Main {
               }
 
             } while( optionOuterMenu != 7 );
-  /*      ConnectingDB connection = new ConnectingDB();
-        try ( Connection testing = connection.get_connection() ) {
-        } catch (SQLException e) {
-            System.out.println(e);
-        }*/
     }
 }

@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Suppliers extends ManagingDb {
     String nombre;
     int telefono;
-    public static Scanner sc = new Scanner(System.in);
+
 
     public static void create() {
         System.out.println("Ingrese el nombre del proveedor");

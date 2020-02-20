@@ -1,40 +1,53 @@
 package Tables.Products;
-
 import Tables.ManagingDb;
+import Tables.Suppliers.Suppliers;
+import Tables.Suppliers.SuppliersDataBaseManage;
 
 public class Products extends ManagingDb {
-    String nombre;
-    String Sabor;
-    String relleno;
+    String productName;
+    String productFlavor;
+    String productStuffed;
 
+    public static void create() {
+        System.out.println("Ingrese el nombre del producto");
+        String productName = sc.nextLine();
 
+        System.out.println("Ingrese el sabor del producto");
+        String productFlavor = sc.nextLine();
 
+        System.out.println("Ingrese el sabor del producto");
+        String productStuffed = sc.nextLine();
 
+        Products product = new Products();
+       product.setProductName(productName);
+       product.setProductFlavor(productFlavor);
+       product.setProductStuffed(productStuffed);
 
-
-
-    //getters and setters
-    public String getNombre() {
-        return nombre;
+        ProductsD_BManage.createData(product);
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    // getters and setters
+    public String getProductName() {
+        return productName;
     }
 
-    public String getSabor() {
-        return Sabor;
+    public void setProductName(String productName) {
+        this.productName = productName;
     }
 
-    public void setSabor(String sabor) {
-        Sabor = sabor;
+    public String getProductFlavor() {
+        return productFlavor;
     }
 
-    public String getRelleno() {
-        return relleno;
+    public void setProductFlavor(String productFlavor) {
+        this.productFlavor = productFlavor;
     }
 
-    public void setRelleno(String relleno) {
-        this.relleno = relleno;
+    public String getProductStuffed() {
+        return productStuffed;
+    }
+
+    public void setProductStuffed(String productStuffed) {
+        this.productStuffed = productStuffed;
     }
 }

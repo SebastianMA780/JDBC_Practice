@@ -1,8 +1,11 @@
 package Tables;
 
+import java.util.Scanner;
+
 public class ManagingDb {
     int id;
     String fecha;
+    public static Scanner sc = new Scanner(System.in);
 
     public static void  create() {
 
