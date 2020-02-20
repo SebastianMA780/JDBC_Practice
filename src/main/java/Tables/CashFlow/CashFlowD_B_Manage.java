@@ -1,0 +1,41 @@
+package Tables.CashFlow;
+import Connection.ConnectingDB;
+import java.sql.*;
+import java.util.Scanner;
+
+public class CashFlowD_B_Manage {
+    private static ConnectingDB db_conect = new ConnectingDB();
+    private static PreparedStatement ps = null;
+    private static ResultSet rs = null;
+    public static Scanner sc = new Scanner(System.in);
+
+    public static void createData(CashFlow cashFlow) {
+        try (Connection ConnectingDB = db_conect.get_connection()) {
+
+            try {
+                String query = "INSERT INTO `flujo_caja` (`saldo`,`ingreso_id`,`gasto_id`) VALUES (?, ?, ?)";
+                ps = ConnectingDB.prepareStatement(query);
+                ps.setInt(1, cashFlow.getBalance());
+
+                if ( cashFlow.getIncome_id() == 0) {
+                    ps.setNull(2, Types.VARCHAR);
+                } else {
+                    ps.setInt(2, cashFlow.getIncome_id());
+                }
+                if ( cashFlow.getExpense_id() == 0) {
+                   ps.setNull(3,Types.VARCHAR);
+                } else {
+                    ps.setInt(3, cashFlow.getExpense_id());
+                }
+
+                ps.executeUpdate();
+                System.out.println("EL flujo de caja ha sido actualizado");
+            } catch (SQLException ex) {
+                System.out.println(ex);
+
+            }
+        } catch (SQLException e) {
+            System.out.println(e);
+        }
+    }
+}

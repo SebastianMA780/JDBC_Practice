@@ -1,10 +1,9 @@
 package Tables.Suppliers;
 import Tables.ManagingDb;
-import java.util.Scanner;
 
 public class Suppliers extends ManagingDb {
-    String nombre;
-    int telefono;
+    String supplierName;
+    int phoneSupplier;
 
 
     public static void create() {
@@ -15,26 +14,27 @@ public class Suppliers extends ManagingDb {
         int phoneSupplier = sc.nextInt();
 
         Suppliers supplier = new Suppliers();
-        supplier.setNombre(supplierName);
-        supplier.setTelefono(phoneSupplier);
+        supplier.setSupplierName(supplierName);
+        supplier.setPhoneSupplier(phoneSupplier);
 
-        SuppliersDataBaseManage.createData(supplier);
+        SuppliersD_B_Manage.createData(supplier);
     }
 
     //getters and setters
-    public String getNombre() {
-        return nombre;
+
+    public String getSupplierName() {
+        return supplierName;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setSupplierName(String supplierName) {
+        this.supplierName = supplierName;
     }
 
-    public int getTelefono() {
-        return telefono;
+    public int getPhoneSupplier() {
+        return phoneSupplier;
     }
 
-    public void setTelefono(int telefono) {
-        this.telefono = telefono;
+    public void setPhoneSupplier(int phoneSupplier) {
+        this.phoneSupplier = phoneSupplier;
     }
 }

@@ -1,10 +1,9 @@
+import Tables.CashFlow.CashFlow;
 import Tables.Expenses.Expenses;
 import Tables.Income.Income;
 import Tables.Materials.Materials;
 import Tables.Products.Products;
 import Tables.Suppliers.Suppliers;
-
-
 import java.util.Scanner;
 
 public class Main {
@@ -41,6 +40,23 @@ public class Main {
               switch (optionOuterMenu) {
                   case 1:
                       PrintMenu();
+                      optionInnerMenu = sc.nextInt();
+                      switch (optionInnerMenu) {
+                          case 1:
+                              CashFlow.create();
+                              break;
+                          case 2:
+                              System.out.println("Reading");
+                              break;
+                          case 3:
+                              System.out.println("Updating");
+                              break;
+                          case 4:
+                              System.out.println("Deleting");
+                              break;
+                          default:
+                              break;
+                      }
                       break;
                   case 2:
                       PrintMenu();

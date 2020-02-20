@@ -1,9 +1,7 @@
 package Tables.Expenses;
 import Connection.ConnectingDB;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+
+import java.sql.*;
 import java.util.Scanner;
 
 public class ExpensesD_B_Manage {
@@ -20,7 +18,13 @@ public class ExpensesD_B_Manage {
                 ps = ConnectingDB.prepareStatement(query);
                 ps.setString(1, expense.getQuantity());
                 ps.setInt(2, expense.getAmount());
-                ps.setInt(3, expense.getMaterial_id());
+
+                if ( expense.getMaterial_id() == 0) {
+                    ps.setNull(3,Types.VARCHAR);
+                } else {
+                    ps.setInt(3, expense.getMaterial_id());
+                }
+
                 ps.executeUpdate();
                 System.out.println("Su gasto ha sido registrado");
             } catch (SQLException ex) {

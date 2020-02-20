@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Scanner;
 
-public class MaterialsD_BManage {
+public class MaterialsD_B_Manage {
     private static ConnectingDB db_conect = new ConnectingDB();
     private static PreparedStatement ps = null;
     private static ResultSet rs = null;

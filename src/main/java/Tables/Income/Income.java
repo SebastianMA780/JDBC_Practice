@@ -1,6 +1,4 @@
 package Tables.Income;
-import Tables.Expenses.Expenses;
-import Tables.Expenses.ExpensesD_B_Manage;
 import Tables.ManagingDb;
 
 public class Income extends ManagingDb {

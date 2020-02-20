@@ -1,8 +1,5 @@
 package Tables.Materials;
-
 import Tables.ManagingDb;
-import Tables.Products.Products;
-import Tables.Products.ProductsD_BManage;
 
 public class Materials extends ManagingDb {
     String productName;
@@ -20,7 +17,7 @@ public class Materials extends ManagingDb {
         material.setSupplier_id(supplier_id);
 
 
-        MaterialsD_BManage.createData(material);
+        MaterialsD_B_Manage.createData(material);
     }
 
     //getters and setters

@@ -1,7 +1,5 @@
 package Tables.Products;
 import Tables.ManagingDb;
-import Tables.Suppliers.Suppliers;
-import Tables.Suppliers.SuppliersDataBaseManage;
 
 public class Products extends ManagingDb {
     String productName;
@@ -23,7 +21,7 @@ public class Products extends ManagingDb {
        product.setProductFlavor(productFlavor);
        product.setProductStuffed(productStuffed);
 
-        ProductsD_BManage.createData(product);
+        ProductsD_B_Manage.createData(product);
     }
 
     // getters and setters
