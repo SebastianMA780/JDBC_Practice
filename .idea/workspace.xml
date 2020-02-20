@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5d970516-acb2-4abc-9d79-acfbcebd1e79" name="Default Changelist" comment="" />
+    <list default="true" id="5d970516-acb2-4abc-9d79-acfbcebd1e79" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Tables/Products/Products.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Tables/Suppliers/Suppliers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tables/ManagingDb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tables/ManagingDb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tables/Products.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tables/Suppliers.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +23,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1Y0J52YeZlHPy7QtxhCiBNgtSRo" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -26,6 +39,7 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.31724137" />
@@ -58,29 +72,33 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1398" height="226" key="GridCell.Tab.0.bottom" timestamp="1582143129869">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="2213" y="223" key="#com.intellij.ide.util.MemberChooser" timestamp="1582161630914">
+      <screen x="1440" y="0" width="1920" height="1080" />
     </state>
-    <state width="1398" height="226" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1582143129869" />
-    <state width="1878" height="286" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1582079730444" />
+    <state x="2213" y="223" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1582161630914" />
+    <state width="1878" height="285" key="GridCell.Tab.0.bottom" timestamp="1582162065194">
+      <screen x="1440" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1398" height="226" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1582145818880" />
+    <state width="1878" height="285" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1582162065194" />
     <state width="1878" height="286" key="GridCell.Tab.0.bottom/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1582080946656" />
-    <state width="1398" height="226" key="GridCell.Tab.0.center" timestamp="1582143129867">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1878" height="285" key="GridCell.Tab.0.center" timestamp="1582162065191">
+      <screen x="1440" y="0" width="1920" height="1080" />
     </state>
-    <state width="1398" height="226" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1582143129867" />
-    <state width="1878" height="286" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1582079730442" />
+    <state width="1398" height="226" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1582145818878" />
+    <state width="1878" height="285" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1582162065191" />
     <state width="1878" height="286" key="GridCell.Tab.0.center/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1582080946653" />
-    <state width="1398" height="226" key="GridCell.Tab.0.left" timestamp="1582143129865">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1878" height="285" key="GridCell.Tab.0.left" timestamp="1582162065190">
+      <screen x="1440" y="0" width="1920" height="1080" />
     </state>
-    <state width="1398" height="226" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1582143129865" />
-    <state width="1878" height="286" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1582079730439" />
+    <state width="1398" height="226" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1582145818878" />
+    <state width="1878" height="285" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1582162065189" />
     <state width="1878" height="286" key="GridCell.Tab.0.left/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1582080946652" />
-    <state width="1398" height="226" key="GridCell.Tab.0.right" timestamp="1582143129868">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1878" height="285" key="GridCell.Tab.0.right" timestamp="1582162065192">
+      <screen x="1440" y="0" width="1920" height="1080" />
     </state>
-    <state width="1398" height="226" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1582143129868" />
-    <state width="1878" height="286" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1582079730443" />
+    <state width="1398" height="226" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1582145818879" />
+    <state width="1878" height="285" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1582162065192" />
     <state width="1878" height="286" key="GridCell.Tab.0.right/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1582080946654" />
     <state x="1888" y="121" key="SettingsEditor" timestamp="1582073711848">
       <screen x="1440" y="0" width="1920" height="1080" />
@@ -90,5 +108,13 @@
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
     <state x="2126" y="435" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1582073705311" />
+    <state x="2110" y="159" key="refactoring.ChangeSignatureDialog" timestamp="1582160093721">
+      <screen x="1440" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2110" y="159" key="refactoring.ChangeSignatureDialog/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1582160093721" />
+    <state x="2065" y="241" width="670" height="676" key="search.everywhere.popup" timestamp="1582159598629">
+      <screen x="1440" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2065" y="241" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1582159598629" />
   </component>
 </project>

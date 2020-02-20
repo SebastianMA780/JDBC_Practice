@@ -1,37 +1,18 @@
+import Tables.Suppliers.Suppliers;
+
+
 import java.util.Scanner;
 
 public class Main {
     public static Scanner sc = new Scanner(System.in);
 
     public static void PrintMenu() {
-        int optionInnerMenu = 0;
 
-        do {
             System.out.println("\n1. Create");
             System.out.println("2. Read");
             System.out.println("3. Update");
             System.out.println("4. Delete");
             System.out.println("5. return to main menu");
-            optionInnerMenu = sc.nextInt();
-
-            switch (optionInnerMenu) {
-                case 1:
-                    System.out.println("Creating");
-                    break;
-                case 2:
-                    System.out.println("Reading");
-                    break;
-                case 3:
-                    System.out.println("Updating");
-                    break;
-                case 4:
-                    System.out.println("Deleting");
-                    break;
-                default:
-                    break;
-            }
-
-        } while (optionInnerMenu != 5);
 
     }
 
@@ -70,6 +51,23 @@ public class Main {
                       break;
                   case 6:
                       PrintMenu();
+                     int optionInnerMenu = sc.nextInt();
+                      switch (optionInnerMenu) {
+                          case 1:
+                              Suppliers.create();
+                              break;
+                          case 2:
+                              System.out.println("Reading");
+                              break;
+                          case 3:
+                              System.out.println("Updating");
+                              break;
+                          case 4:
+                              System.out.println("Deleting");
+                              break;
+                          default:
+                              break;
+                      }
                       break;
                   default:
                       break;
