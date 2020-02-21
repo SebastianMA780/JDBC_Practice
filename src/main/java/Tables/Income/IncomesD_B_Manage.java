@@ -6,13 +6,13 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Scanner;
 
-public class IncomeD_B_Manage {
+public class IncomesD_B_Manage {
     private static ConnectingDB db_conect = new ConnectingDB();
     private static PreparedStatement ps = null;
     private static ResultSet rs = null;
     public static Scanner sc = new Scanner(System.in);
 
-    public static void createData(Income income) {
+    public static void createData(Incomes income) {
         try (Connection ConnectingDB = db_conect.get_connection()) {
 
             try {
@@ -30,6 +30,30 @@ public class IncomeD_B_Manage {
         } catch (SQLException e) {
             System.out.println(e);
         }
+    }
+
+    public static void readData() {
+        try (Connection ConnectingDB = db_conect.get_connection()) {
+
+            String query = "SELECT * FROM `ingresos`";
+            ps = ConnectingDB.prepareStatement(query);
+            rs = ps.executeQuery();
+            System.out.println(" ID |  " + "     FECHA" + "        | PORC   |" + " VALOR");
+
+            while ( rs.next() ) {
+                String idDataBase = " " + rs.getInt("id");
+                String dateDatabse = " | " + rs.getString("fecha");
+                String portionsDataBase = " | " + rs.getString("porciones");
+                String amountDataBase = "     | " + rs.getString("valor");
+
+
+                System.out.println(idDataBase + dateDatabse + portionsDataBase + amountDataBase);
+            }
+
+        } catch (SQLException e) {
+            System.out.println(e);
+        }
+
     }
 
 }

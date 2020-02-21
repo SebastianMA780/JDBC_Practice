@@ -38,4 +38,28 @@ public class CashFlowD_B_Manage {
             System.out.println(e);
         }
     }
+
+    public static void readData() {
+        try (Connection ConnectingDB = db_conect.get_connection()) {
+
+            String query = "SELECT * FROM `flujo_caja`";
+            ps = ConnectingDB.prepareStatement(query);
+            rs = ps.executeQuery();
+            System.out.println("ID |" + "       FECHA" + "         | SALDO  ");
+
+            while ( rs.next() ) {
+                String idDataBase = " " + rs.getInt("id");
+                String dateDatabse = " | " + rs.getString("fecha");
+                String balanceDataBase = " | " + rs.getString("saldo");
+
+
+
+                System.out.println( idDataBase + dateDatabse + balanceDataBase );
+            }
+
+        } catch (SQLException e) {
+            System.out.println(e);
+        }
+
+    }
 }

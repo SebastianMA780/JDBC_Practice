@@ -30,4 +30,25 @@ public class MaterialsD_B_Manage {
             System.out.println(e);
         }
     }
+
+    public static void readData() {
+        try (Connection ConnectingDB = db_conect.get_connection()) {
+
+            String query = "SELECT * FROM `materiales`";
+            ps = ConnectingDB.prepareStatement(query);
+            rs = ps.executeQuery();
+            System.out.println("ID | " + " PRODUCTO");
+
+            while ( rs.next() ) {
+                String idDataBase = " " + rs.getInt("id");
+                String productDataBase = " | " + rs.getString("producto");
+
+                System.out.println(idDataBase + productDataBase);
+            }
+
+        } catch (SQLException e) {
+            System.out.println(e);
+        }
+
+    }
 }

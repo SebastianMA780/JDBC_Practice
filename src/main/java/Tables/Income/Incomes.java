@@ -1,7 +1,7 @@
 package Tables.Income;
 import Tables.ManagingDb;
 
-public class Income extends ManagingDb {
+public class Incomes extends ManagingDb {
     int portion;
     int amount;
     int product_id;
@@ -16,12 +16,16 @@ public class Income extends ManagingDb {
         System.out.println("Ingrese el id del producto");
         int product_id = sc.nextInt();
 
-        Income income = new Income();
+        Incomes income = new Incomes();
         income.setPortion(portion);
         income.setAmount(amount);
         income.setProduct_id(product_id);
 
-        IncomeD_B_Manage.createData(income);
+        IncomesD_B_Manage.createData(income);
+    }
+
+    public static void read() {
+        IncomesD_B_Manage.readData();
     }
 
     //getters and setters

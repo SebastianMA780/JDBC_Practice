@@ -1,5 +1,6 @@
 package Tables.Expenses;
 import Tables.ManagingDb;
+import Tables.Materials.MaterialsD_B_Manage;
 
 public class Expenses extends ManagingDb {
     String quantity;
@@ -22,6 +23,10 @@ public class Expenses extends ManagingDb {
         expense.setMaterial_id(material_id);
 
         ExpensesD_B_Manage.createData(expense);
+    }
+
+    public static void read() {
+        ExpensesD_B_Manage.readData();
     }
 
     //getters and setters

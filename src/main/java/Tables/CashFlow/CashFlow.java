@@ -1,4 +1,5 @@
 package Tables.CashFlow;
+import Tables.Income.IncomesD_B_Manage;
 import Tables.ManagingDb;
 
 public class CashFlow extends ManagingDb {
@@ -23,6 +24,10 @@ public class CashFlow extends ManagingDb {
 
 
         CashFlowD_B_Manage.createData(cashFlow);
+    }
+
+    public static void read() {
+        CashFlowD_B_Manage.readData();
     }
 
 

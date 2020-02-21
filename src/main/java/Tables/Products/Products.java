@@ -24,6 +24,10 @@ public class Products extends ManagingDb {
         ProductsD_B_Manage.createData(product);
     }
 
+    public static void read() {
+        ProductsD_B_Manage.readData();
+    }
+
     // getters and setters
     public String getProductName() {
         return productName;

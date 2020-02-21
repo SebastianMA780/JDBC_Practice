@@ -20,6 +20,10 @@ public class Materials extends ManagingDb {
         MaterialsD_B_Manage.createData(material);
     }
 
+    public static void read() {
+        MaterialsD_B_Manage.readData();
+    }
+
     //getters and setters
     public String getProductName() {
         return productName;

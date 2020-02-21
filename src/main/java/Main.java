@@ -1,9 +1,10 @@
 import Tables.CashFlow.CashFlow;
 import Tables.Expenses.Expenses;
-import Tables.Income.Income;
+import Tables.Income.Incomes;
 import Tables.Materials.Materials;
 import Tables.Products.Products;
 import Tables.Suppliers.Suppliers;
+
 import java.util.Scanner;
 
 public class Main {
@@ -11,11 +12,12 @@ public class Main {
 
     public static void PrintMenu() {
 
-            System.out.println("\n1. Create");
-            System.out.println("2. Read");
-            System.out.println("3. Update");
-            System.out.println("4. Delete");
-            System.out.println("5. return to main menu");
+            System.out.println("\n1. Crear un dato");
+            System.out.println("2. leer los datos");
+            System.out.println("3. actualizar un dato");
+            System.out.println("4. borrar un dato");
+            System.out.println("5. Regresar al menu principal");
+            System.out.println("Ingresa el número correspondiente a la acción que deseas realizar aqui abajo");
 
     }
 
@@ -26,15 +28,14 @@ public class Main {
 
             do {
                 System.out.println("|" + "------------------------------------------" + "|");
-                System.out.println("Select the field you want to modify");
-                System.out.println("1. Cash Flow");
-                System.out.println("2. Income");
-                System.out.println("3. Products");
-                System.out.println("4. Expenses");
-                System.out.println("5. Materials");
-                System.out.println("6. Suppliers");
-                System.out.println("7. End Menu");
-                System.out.println("Type the number of the field down");
+                System.out.println("1. Flujo de caja");
+                System.out.println("2. Ingresos");
+                System.out.println("3. Productos");
+                System.out.println("4. Gastos");
+                System.out.println("5. Materiales");
+                System.out.println("6. Proveedores");
+                System.out.println("7. Finalizar el menu");
+                System.out.println("Ingresa el numero correspondiente al campo que deseas modificar aqui abajo");
                 optionOuterMenu = sc.nextInt();
 
               switch (optionOuterMenu) {
@@ -46,7 +47,7 @@ public class Main {
                               CashFlow.create();
                               break;
                           case 2:
-                              System.out.println("Reading");
+                              CashFlow.read();
                               break;
                           case 3:
                               System.out.println("Updating");
@@ -63,10 +64,10 @@ public class Main {
                       optionInnerMenu = sc.nextInt();
                       switch (optionInnerMenu) {
                           case 1:
-                              Income.create();
+                              Incomes.create();
                               break;
                           case 2:
-                              System.out.println("Reading");
+                              Incomes.read();
                               break;
                           case 3:
                               System.out.println("Updating");
@@ -86,7 +87,7 @@ public class Main {
                               Products.create();
                               break;
                           case 2:
-                              System.out.println("Reading");
+                              Products.read();
                               break;
                           case 3:
                               System.out.println("Updating");
@@ -106,7 +107,7 @@ public class Main {
                               Expenses.create();
                               break;
                           case 2:
-                              System.out.println("Reading");
+                              Expenses.read();
                               break;
                           case 3:
                               System.out.println("Updating");
@@ -126,7 +127,7 @@ public class Main {
                               Materials.create();
                               break;
                           case 2:
-                              System.out.println("Reading");
+                              Materials.read();
                               break;
                           case 3:
                               System.out.println("Updating");
@@ -146,7 +147,7 @@ public class Main {
                               Suppliers.create();
                               break;
                           case 2:
-                              System.out.println("Reading");
+                              Suppliers.read();
                               break;
                           case 3:
                               System.out.println("Updating");

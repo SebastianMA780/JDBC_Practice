@@ -20,7 +20,11 @@ public class Suppliers extends ManagingDb {
         SuppliersD_B_Manage.createData(supplier);
     }
 
-    //getters and setters
+    public static void read() {
+        SuppliersD_B_Manage.readData();
+    }
+
+//getters and setters
 
     public String getSupplierName() {
         return supplierName;

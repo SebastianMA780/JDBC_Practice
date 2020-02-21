@@ -35,4 +35,28 @@ public class ExpensesD_B_Manage {
             System.out.println(e);
         }
     }
+
+    public static void readData() {
+        try (Connection ConnectingDB = db_conect.get_connection()) {
+
+            String query = "SELECT * FROM `gastos`";
+            ps = ConnectingDB.prepareStatement(query);
+            rs = ps.executeQuery();
+            System.out.println(" ID  |" + "   FECHA" + "           | CANT  |" + " VALOR");
+
+            while ( rs.next() ) {
+                String idDataBase = " " + rs.getInt("id");
+                String dateDatabse = " | " + rs.getString("fecha");
+                String quantityDataBase = " | " + rs.getString("cantidad");
+                String amountDataBase = " | " + rs.getString("valor");
+
+
+                System.out.println(idDataBase + dateDatabse + quantityDataBase + amountDataBase);
+            }
+
+        } catch (SQLException e) {
+            System.out.println(e);
+        }
+
+    }
 }

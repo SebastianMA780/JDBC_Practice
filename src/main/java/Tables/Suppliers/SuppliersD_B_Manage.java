@@ -30,5 +30,28 @@ public class SuppliersD_B_Manage {
             System.out.println(e);
         }
     }
+
+    public static void readData() {
+        try (Connection ConnectingDB = db_conect.get_connection()) {
+
+            String query = "SELECT * FROM `proveedores`";
+            ps = ConnectingDB.prepareStatement(query);
+            rs = ps.executeQuery();
+            System.out.println("ID  |  " + "    NOMBRE        " + "          | TELEFONO");
+
+            while ( rs.next() ) {
+                String idDataBase = " " + rs.getInt("id");
+                String nameDatabse = " | " + rs.getString("nombre");
+                String phoneDataBase = " | " + rs.getInt("telefono");
+
+
+                System.out.println(idDataBase + nameDatabse + phoneDataBase);
+            }
+
+        } catch (SQLException e) {
+            System.out.println(e);
+        }
+
+    }
 }
 
