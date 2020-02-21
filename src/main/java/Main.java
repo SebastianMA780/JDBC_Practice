@@ -11,8 +11,8 @@ public class Main {
     public static Scanner sc = new Scanner(System.in);
 
     public static void PrintMenu() {
-
-            System.out.println("\n1. Crear un dato");
+            System.out.println("\n|" + "------------------------------------------" + "|");
+            System.out.println("1. Crear un dato");
             System.out.println("2. leer los datos");
             System.out.println("3. actualizar un dato");
             System.out.println("4. borrar un dato");

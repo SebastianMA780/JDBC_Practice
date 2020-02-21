@@ -1,5 +1,6 @@
 package Tables.Expenses;
 import Tables.ManagingDb;
+import Tables.Materials.Materials;
 import Tables.Materials.MaterialsD_B_Manage;
 
 public class Expenses extends ManagingDb {
@@ -14,7 +15,8 @@ public class Expenses extends ManagingDb {
         System.out.println("Ingrese el valor pagado");
         int amount = sc.nextInt();
 
-        System.out.println("Ingrese el id del material /type 0 to set it Null");
+        System.out.println("Ingrese el id del material, encontrará la guia en la tabla de abajo /type 0 to set it Null");
+        Materials.read();
         int material_id = sc.nextInt();
 
         Expenses expense = new Expenses();

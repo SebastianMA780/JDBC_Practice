@@ -1,5 +1,6 @@
 package Tables.Materials;
 import Tables.ManagingDb;
+import Tables.Suppliers.Suppliers;
 
 public class Materials extends ManagingDb {
     String productName;
@@ -9,13 +10,13 @@ public class Materials extends ManagingDb {
         System.out.println("Ingrese el nombre del producto");
         String productName = sc.nextLine();
 
-        System.out.println("Ingrese el id del Producto");
+        System.out.println("Ingrese el id del Proveedor correspondiente en la tabla que vera abajo");
+        Suppliers.read();
         int supplier_id = sc.nextInt();
 
         Materials material = new Materials();
         material.setProductName(productName);
         material.setSupplier_id(supplier_id);
-
 
         MaterialsD_B_Manage.createData(material);
     }

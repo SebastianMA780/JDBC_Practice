@@ -1,5 +1,6 @@
 package Tables.Income;
 import Tables.ManagingDb;
+import Tables.Products.Products;
 
 public class Incomes extends ManagingDb {
     int portion;
@@ -13,7 +14,8 @@ public class Incomes extends ManagingDb {
         System.out.println("Ingrese el dinero recibido");
         int amount = sc.nextInt();
 
-        System.out.println("Ingrese el id del producto");
+        System.out.println("Ingrese el id del producto correspondiente que encontrara en la tabla de abajo");
+        Products.read();
         int product_id = sc.nextInt();
 
         Incomes income = new Incomes();

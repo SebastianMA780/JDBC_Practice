@@ -1,4 +1,6 @@
 package Tables.CashFlow;
+import Tables.Expenses.Expenses;
+import Tables.Income.Incomes;
 import Tables.Income.IncomesD_B_Manage;
 import Tables.ManagingDb;
 
@@ -11,10 +13,12 @@ public class CashFlow extends ManagingDb {
         System.out.println("Ingresa el nuevo saldo de la caja");
         int balance = sc.nextInt();
 
-        System.out.println("Ingresa el id del ingreso /type 0 for set it Null");
+        System.out.println("Ingresa el id del ingreso registrado, encontras la guia aqui abajo /type 0 for set it Null");
+        Incomes.read();
         int income_id = sc.nextInt();
 
-        System.out.println("Ingresa el id del gasto /type 0 for set it Null");
+        System.out.println("Ingresa el id del gasto realizado, encontraras la guia aqui abajo/type 0 for set it Null");
+        Expenses.read();
         int expense_id = sc.nextInt();
 
         CashFlow cashFlow = new CashFlow();
