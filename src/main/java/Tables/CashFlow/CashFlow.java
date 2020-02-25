@@ -9,7 +9,7 @@ public class CashFlow extends ManagingDb {
     int income_id;
     int expense_id;
 
-    public static void create() {
+    public  void create() {
         System.out.println("Ingresa el nuevo saldo de la caja");
         int balance = sc.nextInt();
 
@@ -30,7 +30,7 @@ public class CashFlow extends ManagingDb {
         CashFlowD_B_Manage.createData(cashFlow);
     }
 
-    public static void read() {
+    public  void read() {
         CashFlowD_B_Manage.readData();
     }
 

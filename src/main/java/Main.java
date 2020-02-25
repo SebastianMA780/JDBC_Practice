@@ -8,9 +8,9 @@ import Tables.Suppliers.Suppliers;
 import java.util.Scanner;
 
 public class Main {
-    public static Scanner sc = new Scanner(System.in);
+    public  Scanner sc = new Scanner(System.in);
 
-    public static void PrintMenu() {
+    public  void PrintMenu() {
             System.out.println("\n|" + "------------------------------------------" + "|");
             System.out.println("1. Crear un dato");
             System.out.println("2. leer los datos");
@@ -21,7 +21,7 @@ public class Main {
 
     }
 
-    public static void main(String[] args) {
+    public  void main(String[] args) {
 
         int optionOuterMenu = 0;
         int optionInnerMenu = 0;
@@ -42,12 +42,13 @@ public class Main {
                   case 1:
                       PrintMenu();
                       optionInnerMenu = sc.nextInt();
+                      CashFlow testing = new CashFlow();
                       switch (optionInnerMenu) {
                           case 1:
-                              CashFlow.create();
+                              testing.create();
                               break;
                           case 2:
-                              CashFlow.read();
+                              testing.read();
                               break;
                           case 3:
                               System.out.println("Updating");

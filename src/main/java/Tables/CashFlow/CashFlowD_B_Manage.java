@@ -4,12 +4,12 @@ import java.sql.*;
 import java.util.Scanner;
 
 public class CashFlowD_B_Manage {
-    private static ConnectingDB db_conect = new ConnectingDB();
-    private static PreparedStatement ps = null;
-    private static ResultSet rs = null;
-    public static Scanner sc = new Scanner(System.in);
+    private  ConnectingDB db_conect = new ConnectingDB();
+    private  PreparedStatement ps = null;
+    public  ResultSet rs = null;
+    public  Scanner sc = new Scanner(System.in);
 
-    public static void createData(CashFlow cashFlow) {
+    public  static void createData(CashFlow cashFlow) {
         try (Connection ConnectingDB = db_conect.get_connection()) {
 
             try {
@@ -39,7 +39,7 @@ public class CashFlowD_B_Manage {
         }
     }
 
-    public static void readData() {
+    public  void readData() {
         try (Connection ConnectingDB = db_conect.get_connection()) {
 
             String query = "SELECT * FROM `flujo_caja`";

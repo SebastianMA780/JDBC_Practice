@@ -9,10 +9,10 @@ public class ManagingDb {
     public static Scanner sc = new Scanner(System.in);
 
 //Create a new row in the data Base
-    public static void  create() {
+    public  void  create() {
     }
 //Read the rows from  the data Base
-    public static void  read() {
+    public  void  read() {
     }
 //Update a row in the data base
     public void  update() {
