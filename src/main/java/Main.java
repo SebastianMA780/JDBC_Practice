@@ -8,9 +8,9 @@ import Tables.Suppliers.Suppliers;
 import java.util.Scanner;
 
 public class Main {
-    public  Scanner sc = new Scanner(System.in);
+    public  static Scanner sc = new Scanner(System.in);
 
-    public  void PrintMenu() {
+    public static void PrintMenu() {
             System.out.println("\n|" + "------------------------------------------" + "|");
             System.out.println("1. Crear un dato");
             System.out.println("2. leer los datos");
@@ -21,7 +21,7 @@ public class Main {
 
     }
 
-    public  void main(String[] args) {
+    public static void main(String[] args) {
 
         int optionOuterMenu = 0;
         int optionInnerMenu = 0;

@@ -26,12 +26,13 @@ public class CashFlow extends ManagingDb {
         cashFlow.setIncome_id(income_id);
         cashFlow.setExpense_id(expense_id);
 
-
-        CashFlowD_B_Manage.createData(cashFlow);
+        CashFlowD_B_Manage probando = new CashFlowD_B_Manage();
+        probando.createData(cashFlow);
     }
 
     public  void read() {
-        CashFlowD_B_Manage.readData();
+        CashFlowD_B_Manage test = new CashFlowD_B_Manage();
+        test.readData();
     }
 
 
