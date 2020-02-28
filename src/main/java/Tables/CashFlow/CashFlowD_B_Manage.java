@@ -9,7 +9,7 @@ public class CashFlowD_B_Manage {
     public  ResultSet rs = null;
     public  Scanner sc = new Scanner(System.in);
 
-    public   void createData(CashFlow cashFlow) {
+    public  void createData(CashFlow cashFlow) {
         try (Connection ConnectingDB = db_conect.get_connection()) {
 
             try {
