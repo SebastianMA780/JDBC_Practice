@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d970516-acb2-4abc-9d79-acfbcebd1e79" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tables/CashFlow/CashFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tables/CashFlow/CashFlow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tables/Expenses/Expenses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tables/Expenses/Expenses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tables/Income/Incomes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tables/Income/Incomes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tables/ManagingDb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tables/ManagingDb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tables/Materials/Materials.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tables/Materials/Materials.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tables/Products/Products.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tables/Products/Products.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tables/Suppliers/Suppliers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tables/Suppliers/Suppliers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tables/CashFlow/CashFlowD_B_Manage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tables/CashFlow/CashFlowD_B_Manage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tables/Expenses/ExpensesD_B_Manage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tables/Expenses/ExpensesD_B_Manage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tables/Income/IncomesD_B_Manage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tables/Income/IncomesD_B_Manage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tables/Materials/MaterialsD_B_Manage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tables/Materials/MaterialsD_B_Manage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tables/Suppliers/SuppliersD_B_Manage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tables/Suppliers/SuppliersD_B_Manage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -10,7 +10,6 @@ public class SuppliersD_B_Manage {
     private static ConnectingDB db_conect = new ConnectingDB();
     private static PreparedStatement ps = null;
     private static ResultSet rs = null;
-    public static Scanner sc = new Scanner(System.in);
 
     public static void createData(Suppliers supplier) {
         try (Connection ConnectingDB = db_conect.get_connection()) {
