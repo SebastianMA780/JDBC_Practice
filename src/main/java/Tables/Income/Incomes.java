@@ -2,12 +2,15 @@ package Tables.Income;
 import Tables.ManagingDb;
 import Tables.Products.Products;
 
+import java.util.Scanner;
+
 public class Incomes extends ManagingDb {
     int portion;
     int amount;
     int product_id;
 
     public static void create() {
+        Scanner sc = new Scanner(System.in);
         System.out.println("Ingrese la porciones del producto");
         int portion = sc.nextInt();
 

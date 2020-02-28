@@ -1,12 +1,11 @@
 package Tables;
 
-import java.util.Scanner;
 
 //this is the super class that extends to Tables.Classes
 public class ManagingDb {
     int id;
     String fecha;
-    public static Scanner sc = new Scanner(System.in);
+
 
 //Create a new row in the data Base
     public static void  create() {

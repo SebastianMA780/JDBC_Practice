@@ -1,12 +1,15 @@
 package Tables.Suppliers;
 import Tables.ManagingDb;
 
+import java.util.Scanner;
+
 public class Suppliers extends ManagingDb {
     String supplierName;
     int phoneSupplier;
 
 
     public static void create() {
+        Scanner sc = new Scanner(System.in);
         System.out.println("Ingrese el nombre del proveedor");
         String supplierName = sc.nextLine();
 

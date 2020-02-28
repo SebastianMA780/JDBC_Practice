@@ -1,12 +1,15 @@
 package Tables.Products;
 import Tables.ManagingDb;
 
+import java.util.Scanner;
+
 public class Products extends ManagingDb {
     String productName;
     String productFlavor;
     String productStuffed;
 
     public static void create() {
+        Scanner sc = new Scanner(System.in);
         System.out.println("Ingrese el nombre del producto");
         String productName = sc.nextLine();
 

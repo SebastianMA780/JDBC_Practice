@@ -3,12 +3,15 @@ import Tables.ManagingDb;
 import Tables.Materials.Materials;
 import Tables.Materials.MaterialsD_B_Manage;
 
+import java.util.Scanner;
+
 public class Expenses extends ManagingDb {
     String quantity;
     int amount;
     int material_id;
 
     public static void create() {
+        Scanner sc = new Scanner(System.in);
         System.out.println("Ingrese la cantidad del material");
         String quantity = sc.nextLine();
 

@@ -2,11 +2,14 @@ package Tables.Materials;
 import Tables.ManagingDb;
 import Tables.Suppliers.Suppliers;
 
+import java.util.Scanner;
+
 public class Materials extends ManagingDb {
     String productName;
     int supplier_id;
 
     public static void create() {
+        Scanner sc = new Scanner(System.in);
         System.out.println("Ingrese el nombre del producto");
         String productName = sc.nextLine();
 

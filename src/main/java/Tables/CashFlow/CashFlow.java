@@ -3,13 +3,16 @@ import Tables.Expenses.Expenses;
 import Tables.Income.Incomes;
 import Tables.Income.IncomesD_B_Manage;
 import Tables.ManagingDb;
+import java.util.Scanner;
 
 public class CashFlow extends ManagingDb {
     int balance;
     int income_id;
     int expense_id;
 
+
     public static void create() {
+        Scanner sc = new Scanner(System.in);
         System.out.println("Ingresa el nuevo saldo de la caja");
         int balance = sc.nextInt();
 
