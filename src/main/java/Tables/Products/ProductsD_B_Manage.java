@@ -1,5 +1,4 @@
 package Tables.Products;
-import Connection.ConnectingDB;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

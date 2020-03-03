@@ -1,5 +1,4 @@
 package Tables.Expenses;
-import Connection.ConnectingDB;
 
 import java.sql.*;
 import java.util.Scanner;
