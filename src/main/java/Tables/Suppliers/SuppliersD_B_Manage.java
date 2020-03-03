@@ -4,9 +4,10 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Scanner;
+import Connection.DBConnection;
 
-public class SuppliersD_B_Manage {
-    private static DBConnection db_conect = new ConnectingDB();
+public class SuppliersD_B_Manage implements DBConnection {
+
     private static PreparedStatement ps = null;
     private static ResultSet rs = null;
     public static Scanner sc = new Scanner(System.in);

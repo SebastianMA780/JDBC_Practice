@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d970516-acb2-4abc-9d79-acfbcebd1e79" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Connection/ConnectingDB.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tables/CashFlow/CashFlowD_B_Manage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tables/CashFlow/CashFlowD_B_Manage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Connection/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Connection/DBConnection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Tables/Suppliers/SuppliersD_B_Manage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tables/Suppliers/SuppliersD_B_Manage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
