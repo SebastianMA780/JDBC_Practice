@@ -1,25 +1,22 @@
-package Tables;
-
-import java.util.Scanner;
+package SuperClasses;
 
 //this is the super class that extends to Tables.Classes
-public class ManagingDb {
+public abstract class ManagingDb {
     int id;
     String fecha;
-    public static Scanner sc = new Scanner(System.in);
 
 //Create a new row in the data Base
-    public  void  create() {
-    }
+
+    public  abstract void  create();
+
 //Read the rows from  the data Base
-    public  void  read() {
-    }
+
+    public  abstract void  read();
+
 //Update a row in the data base
-    public void  update() {
-    }
+   // public void  update() {}
 //Delete a row in the data base
-    public void  delete() {
-    }
+  //  public void  delete() {}
 
 //getter and setter
 

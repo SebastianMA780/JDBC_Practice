@@ -1,36 +1,44 @@
-package Tables.Suppliers;
+package Tables.Income;
+
 import SuperClasses.TablesDAO;
+import Tables.Products.Products;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Scanner;
 
-public interface SuppliersDAO extends TablesDAO {
-
+public interface IncomesDAO extends TablesDAO {
     @Override
     default void createDataParameters(Connection connection, PreparedStatement ps) {
         try {
             Scanner sc = new Scanner(System.in);
-            System.out.println("Ingrese el nombre del proveedor");
-            String supplierName = sc.nextLine();
+            System.out.println("Ingrese la porciones del producto");
+            int portion = sc.nextInt();
 
-            System.out.println("Ingrese el telefono");
-            int phoneSupplier = sc.nextInt();
+            System.out.println("Ingrese el dinero recibido");
+            int amount = sc.nextInt();
 
-            Suppliers supplier = new Suppliers();
-            supplier.setSupplierName(supplierName);
-            supplier.setPhoneSupplier(phoneSupplier);
+            Products product = new Products();
+            System.out.println("Ingrese el id del producto correspondiente que encontrara en la tabla de abajo");
+            product.read();
+            int product_id = sc.nextInt();
 
-            String query = "INSERT INTO `proveedores` (`nombre`,`telefono`) VALUES (?, ?)";
+            Incomes income = new Incomes();
+            income.setPortion(portion);
+            income.setAmount(amount);
+            income.setProduct_id(product_id);
+
+            String query = "INSERT INTO `ingresos` (`porciones`,`valor`,`producto_id`) VALUES (?, ?, ?)";
             ps = connection.prepareStatement(query);
-            ps.setString(1, supplier.getSupplierName());
-            ps.setInt(2, supplier.getPhoneSupplier());
+            ps.setInt(1, income.getPortion());
+            ps.setInt(2, income.getAmount());
+            ps.setInt(3, income.getProduct_id());
             ps.executeUpdate();
-            System.out.println("El proveedor ha sido creado con éxito");
-        } catch (SQLException ex) {
-            System.out.println(ex);
-
+            System.out.println("Su ganancia ha sido registrado");
+        } catch (SQLException e) {
+            System.out.println(e);
         }
     }
 
@@ -51,10 +59,9 @@ public interface SuppliersDAO extends TablesDAO {
 
                 System.out.println(idDataBase + nameDatabse + phoneDataBase);
             }
-        } catch (SQLException e) {
+
+        }catch (SQLException e) {
             System.out.println(e);
         }
     }
 }
-
-

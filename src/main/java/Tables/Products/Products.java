@@ -1,32 +1,22 @@
 package Tables.Products;
-import Tables.ManagingDb;
+import SuperClasses.ManagingDb;
 
-public class Products extends ManagingDb {
+public class Products extends ManagingDb implements ProductsDAO {
     String productName;
     String productFlavor;
     String productStuffed;
 
-    public static void create() {
-        System.out.println("Ingrese el nombre del producto");
-        String productName = sc.nextLine();
 
-        System.out.println("Ingrese el sabor del producto");
-        String productFlavor = sc.nextLine();
-
-        System.out.println("Ingrese el sabor del producto");
-        String productStuffed = sc.nextLine();
-
-        Products product = new Products();
-       product.setProductName(productName);
-       product.setProductFlavor(productFlavor);
-       product.setProductStuffed(productStuffed);
-
-        ProductsD_B_Manage.createData(product);
+    @Override
+    public void create() {
+        createData();
     }
 
-    public static void read() {
-        ProductsD_B_Manage.readData();
+    @Override
+    public void read() {
+        readData();
     }
+
 
     // getters and setters
     public String getProductName() {

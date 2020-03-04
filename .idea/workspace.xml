@@ -3,9 +3,21 @@
   <component name="ChangeListManager">
     <list default="true" id="5d970516-acb2-4abc-9d79-acfbcebd1e79" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Connection/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Connection/DBConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tables/Suppliers/SuppliersD_B_Manage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tables/Suppliers/SuppliersD_B_Manage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tables/CashFlow/CashFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tables/CashFlow/CashFlow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tables/CashFlow/CashFlowD_B_Manage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tables/Expenses/Expenses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tables/Expenses/Expenses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tables/Expenses/ExpensesD_B_Manage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tables/Income/Incomes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tables/Income/Incomes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tables/Income/IncomesD_B_Manage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tables/ManagingDb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SuperClasses/ManagingDb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tables/Materials/Materials.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tables/Materials/Materials.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tables/Materials/MaterialsD_B_Manage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tables/Products/Products.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tables/Products/Products.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tables/Products/ProductsD_B_Manage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tables/Suppliers/Suppliers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tables/Suppliers/Suppliers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tables/Suppliers/SuppliersDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tables/Suppliers/SuppliersDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tables/Suppliers/SuppliersD_B_Manage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UIMenu/UIMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UIMenu/UIMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +56,11 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.31724137" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -76,19 +93,27 @@
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
     <state x="2000" y="205" key="#Project_Structure/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1583195580148" />
-    <state x="580" y="186" key="#com.intellij.ide.util.MemberChooser" timestamp="1582226933272">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="2213" y="223" key="#com.intellij.ide.util.MemberChooser" timestamp="1583287202761">
+      <screen x="1440" y="0" width="1920" height="1080" />
     </state>
     <state x="580" y="186" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1582226933272" />
-    <state x="2213" y="223" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1582167133584" />
+    <state x="2213" y="223" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1583287202761" />
+    <state x="2016" y="454" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1583284756245">
+      <screen x="1440" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2016" y="454" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1583284756245" />
+    <state x="2183" y="416" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1583284759650">
+      <screen x="1440" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2183" y="416" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1583284759650" />
     <state x="2145" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1582245992526">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
     <state x="2145" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1582245992526" />
-    <state x="2138" y="294" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583195649659">
+    <state x="2138" y="294" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583286325379">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
-    <state x="2138" y="294" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1583195649659" />
+    <state x="2138" y="294" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1583286325379" />
     <state width="1878" height="883" key="GridCell.Tab.0.bottom" timestamp="1582725815472">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>

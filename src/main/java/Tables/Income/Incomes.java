@@ -1,34 +1,22 @@
 package Tables.Income;
-import Tables.ManagingDb;
+import SuperClasses.ManagingDb;
 import Tables.Products.Products;
 
-public class Incomes extends ManagingDb {
+public class Incomes extends ManagingDb implements IncomesDAO {
     int portion;
     int amount;
     int product_id;
 
-    public static void create() {
-        System.out.println("Ingrese la porciones del producto");
-        int portion = sc.nextInt();
-
-        System.out.println("Ingrese el dinero recibido");
-        int amount = sc.nextInt();
-
-        System.out.println("Ingrese el id del producto correspondiente que encontrara en la tabla de abajo");
-        Products.read();
-        int product_id = sc.nextInt();
-
-        Incomes income = new Incomes();
-        income.setPortion(portion);
-        income.setAmount(amount);
-        income.setProduct_id(product_id);
-
-        IncomesD_B_Manage.createData(income);
+    @Override
+    public void create() {
+        createData();
     }
 
-    public static void read() {
-        IncomesD_B_Manage.readData();
+    @Override
+    public void read() {
+        readData();
     }
+
 
     //getters and setters
     public int getPortion() {
@@ -54,4 +42,6 @@ public class Incomes extends ManagingDb {
     public void setProduct_id(int product_id) {
         this.product_id = product_id;
     }
+
+
 }

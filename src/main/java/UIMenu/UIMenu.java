@@ -41,14 +41,13 @@ public class UIMenu {
                 case 1:
                     PrintMenu();
                     optionInnerMenu = sc.nextInt();
-
+                    CashFlow cashFlow = new CashFlow();
                     switch (optionInnerMenu) {
                         case 1:
-                            CashFlow cashFlow = new CashFlow();
                             cashFlow.create();
                             break;
                         case 2:
-                            System.out.println("Reading");
+                            cashFlow.read();
                             break;
                         case 3:
                             System.out.println("Updating");
@@ -63,12 +62,13 @@ public class UIMenu {
                 case 2:
                     PrintMenu();
                     optionInnerMenu = sc.nextInt();
+                    Incomes income = new Incomes();
                     switch (optionInnerMenu) {
                         case 1:
-                            Incomes.create();
+                            income.create();
                             break;
                         case 2:
-                            Incomes.read();
+                            income.read();
                             break;
                         case 3:
                             System.out.println("Updating");
@@ -83,12 +83,13 @@ public class UIMenu {
                 case 3:
                     PrintMenu();
                     optionInnerMenu = sc.nextInt();
+                    Products product = new Products();
                     switch (optionInnerMenu) {
                         case 1:
-                            Products.create();
+                            product.create();
                             break;
                         case 2:
-                            Products.read();
+                            product.read();
                             break;
                         case 3:
                             System.out.println("Updating");
@@ -103,12 +104,13 @@ public class UIMenu {
                 case 4:
                     PrintMenu();
                     optionInnerMenu = sc.nextInt();
+                    Expenses expense = new Expenses();
                     switch (optionInnerMenu) {
                         case 1:
-                            Expenses.create();
+                            expense.create();
                             break;
                         case 2:
-                            Expenses.read();
+                            expense.read();
                             break;
                         case 3:
                             System.out.println("Updating");
@@ -123,12 +125,13 @@ public class UIMenu {
                 case 5:
                     PrintMenu();
                     optionInnerMenu = sc.nextInt();
+                    Materials material = new Materials();
                     switch (optionInnerMenu) {
                         case 1:
-                            Materials.create();
+                            material.create();
                             break;
                         case 2:
-                            Materials.read();
+                            material.read();
                             break;
                         case 3:
                             System.out.println("Updating");
@@ -143,12 +146,13 @@ public class UIMenu {
                 case 6:
                     PrintMenu();
                     optionInnerMenu = sc.nextInt();
+                    Suppliers supplier = new Suppliers();
                     switch (optionInnerMenu) {
                         case 1:
-                            Suppliers.create();
+                            supplier.create();
                             break;
                         case 2:
-                            Suppliers.read();
+                            supplier.read();
                             break;
                         case 3:
                             System.out.println("Updating");

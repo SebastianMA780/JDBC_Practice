@@ -1,29 +1,21 @@
 package Tables.Materials;
-import Tables.ManagingDb;
+import SuperClasses.ManagingDb;
 import Tables.Suppliers.Suppliers;
 
-public class Materials extends ManagingDb {
+public class Materials extends ManagingDb implements MaterialsDAO{
     String productName;
     int supplier_id;
 
-    public static void create() {
-        System.out.println("Ingrese el nombre del producto");
-        String productName = sc.nextLine();
-
-        System.out.println("Ingrese el id del Proveedor correspondiente en la tabla que vera abajo");
-        Suppliers.read();
-        int supplier_id = sc.nextInt();
-
-        Materials material = new Materials();
-        material.setProductName(productName);
-        material.setSupplier_id(supplier_id);
-
-        MaterialsD_B_Manage.createData(material);
+    @Override
+    public void create() {
+        createData();
     }
 
-    public static void read() {
-        MaterialsD_B_Manage.readData();
+    @Override
+    public void read() {
+        readData();
     }
+
 
     //getters and setters
     public String getProductName() {
@@ -41,4 +33,6 @@ public class Materials extends ManagingDb {
     public void setSupplier_id(int supplier_id) {
         this.supplier_id = supplier_id;
     }
+
+
 }
