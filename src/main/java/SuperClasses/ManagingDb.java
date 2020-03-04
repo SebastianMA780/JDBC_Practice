@@ -2,8 +2,8 @@ package SuperClasses;
 
 //this is the super class that extends to Tables.Classes
 public abstract class ManagingDb {
-    int id;
-    String fecha;
+    private int id;
+    private String date;
 
 //Create a new row in the data Base
 
@@ -29,10 +29,10 @@ public abstract class ManagingDb {
     }
 
     public String getFecha() {
-        return fecha;
+        return date;
     }
 
     public void setFecha(String fecha) {
-        this.fecha = fecha;
+        this.date = date;
     }
 }

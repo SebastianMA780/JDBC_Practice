@@ -2,8 +2,8 @@ package Tables.Suppliers;
 import SuperClasses.ManagingDb;
 
 public class Suppliers extends ManagingDb implements SuppliersDAO {
-    String supplierName;
-    int phoneSupplier;
+    private String supplierName;
+    private int phoneSupplier;
 
     @Override
     public void create() {

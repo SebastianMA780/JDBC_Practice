@@ -23,7 +23,7 @@ public class UIMenu {
 
     public void showMenu() {
          int optionOuterMenu = 0;
-        int optionInnerMenu = 0;
+         int optionInnerMenu = 0;
 
         do {
             System.out.println("|" + "------------------------------------------" + "|");
@@ -34,7 +34,7 @@ public class UIMenu {
             System.out.println("5. Materiales");
             System.out.println("6. Proveedores");
             System.out.println("7. Finalizar el menu");
-            System.out.println("Ingresa el numero correspondiente al campo que deseas modificar aqui abajo");
+            System.out.println("Ingresa el número correspondiente al campo que deseas modificar aqui abajo");
             optionOuterMenu = sc.nextInt();
 
             switch (optionOuterMenu) {

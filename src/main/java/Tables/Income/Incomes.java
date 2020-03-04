@@ -3,9 +3,9 @@ import SuperClasses.ManagingDb;
 import Tables.Products.Products;
 
 public class Incomes extends ManagingDb implements IncomesDAO {
-    int portion;
-    int amount;
-    int product_id;
+    private int portion;
+    private int amount;
+    private int product_id;
 
     @Override
     public void create() {

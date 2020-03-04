@@ -2,9 +2,9 @@ package Tables.Products;
 import SuperClasses.ManagingDb;
 
 public class Products extends ManagingDb implements ProductsDAO {
-    String productName;
-    String productFlavor;
-    String productStuffed;
+    private String productName;
+    private String productFlavor;
+    private String productStuffed;
 
 
     @Override

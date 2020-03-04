@@ -3,8 +3,8 @@ import SuperClasses.ManagingDb;
 import Tables.Suppliers.Suppliers;
 
 public class Materials extends ManagingDb implements MaterialsDAO{
-    String productName;
-    int supplier_id;
+    private String productName;
+    private int supplier_id;
 
     @Override
     public void create() {

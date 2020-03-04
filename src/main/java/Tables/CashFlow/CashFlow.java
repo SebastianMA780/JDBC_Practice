@@ -4,9 +4,9 @@ import Tables.Income.Incomes;
 import SuperClasses.ManagingDb;
 
 public class CashFlow extends ManagingDb implements CashFlowDAO {
-    int balance;
-    int income_id;
-    int expense_id;
+    private int balance;
+    private int income_id;
+    private int expense_id;
 
     @Override
     public void create() {

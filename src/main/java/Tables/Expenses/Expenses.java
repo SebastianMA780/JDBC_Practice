@@ -3,9 +3,9 @@ import SuperClasses.ManagingDb;
 import Tables.Materials.Materials;
 
 public class Expenses extends ManagingDb implements ExpensesDAO {
-    String quantity;
-    int amount;
-    int material_id;
+    private String quantity;
+    private int amount;
+    private int material_id;
 
     @Override
     public void create() {
