@@ -46,18 +46,19 @@ public interface IncomesDAO extends TablesDAO {
     default void readDataParameters(Connection connection, PreparedStatement ps, ResultSet rs) {
         try {
 
-            String query = "SELECT * FROM `proveedores`";
+            String query = "SELECT * FROM `ingresos`";
             ps = connection.prepareStatement(query);
             rs = ps.executeQuery();
-            System.out.println("ID  |  " + "    NOMBRE        " + "          | TELEFONO");
+            System.out.println(" ID |  " + "     FECHA" + "        | PORC   |" + " VALOR");
 
-            while (rs.next()) {
+            while ( rs.next() ) {
                 String idDataBase = " " + rs.getInt("id");
-                String nameDatabse = " | " + rs.getString("nombre");
-                String phoneDataBase = " | " + rs.getInt("telefono");
+                String dateDatabse = " | " + rs.getString("fecha");
+                String portionsDataBase = " | " + rs.getString("porciones");
+                String amountDataBase = "     | " + rs.getString("valor");
 
 
-                System.out.println(idDataBase + nameDatabse + phoneDataBase);
+                System.out.println(idDataBase + dateDatabse + portionsDataBase + amountDataBase);
             }
 
         }catch (SQLException e) {
