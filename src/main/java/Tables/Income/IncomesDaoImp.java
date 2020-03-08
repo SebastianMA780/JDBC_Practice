@@ -1,8 +1,5 @@
 package Tables.Income;
-
-import Tables.Products.Products;
 import Tables.Products.ProductsDaoImp;
-import Tables.Suppliers.Suppliers;
 import TablesDAO.ITablesDao;
 import java.sql.Connection;
 import java.sql.PreparedStatement;

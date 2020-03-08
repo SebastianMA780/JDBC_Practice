@@ -1,5 +1,4 @@
 package Tables.Products;
-import Tables.Suppliers.Suppliers;
 import TablesDAO.ITablesDao;
 import java.sql.Connection;
 import java.sql.PreparedStatement;

@@ -1,9 +1,6 @@
 package Tables.Expenses;
-import Tables.Materials.Materials;
 import Tables.Materials.MaterialsDaoImp;
-import Tables.Suppliers.Suppliers;
 import TablesDAO.ITablesDao;
-
 import java.sql.*;
 import java.util.Scanner;
 import Connection.DBConnection;
