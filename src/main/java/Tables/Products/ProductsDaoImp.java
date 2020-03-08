@@ -1,15 +1,21 @@
 package Tables.Products;
-import SuperClasses.TablesDAO;
+import Tables.Suppliers.Suppliers;
+import TablesDAO.ITablesDao;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Scanner;
+import Connection.DBConnection;
 
-public interface ProductsDAO extends TablesDAO {
-    @Override
-    default void createDataParameters(Connection connection, PreparedStatement ps) {
-        try {
+public class ProductsDaoImp implements DBConnection, ITablesDao {
+    PreparedStatement ps = null;
+    ResultSet rs = null;
+
+    public void createData() {
+
+        try (Connection connection = get_connection()) {
+
             Scanner sc = new Scanner(System.in);
             System.out.println("Ingrese el nombre del producto");
             String productName = sc.nextLine();
@@ -32,30 +38,38 @@ public interface ProductsDAO extends TablesDAO {
             ps.setString(3, product.getProductStuffed());
             ps.executeUpdate();
             System.out.println("El producto ha sido creado");
+
         } catch (SQLException e) {
             System.out.println(e);
         }
     }
+    public void readData() {
 
-    @Override
-    default void readDataParameters(Connection connection, PreparedStatement ps, ResultSet rs) {
-        try {
-            String query = "SELECT * FROM `productos`";
-            ps = connection.prepareStatement(query);
-            rs = ps.executeQuery();
-            System.out.println("ID  |" + "NOMBRE" + "| SABOR " + "  | RELLENO");
+        try ( Connection connection = get_connection() ) {
 
-            while ( rs.next() ) {
-                String idDataBase = " " + rs.getInt("id");
-                String nameDatabse = " | " + rs.getString("nombre");
-                String flavorDataBase = " | " + rs.getString("sabor");
-                String stuffedDataBase = " | " + rs.getString("relleno");
+            try {
+
+                String query = "SELECT * FROM `productos`";
+                ps = connection.prepareStatement(query);
+                rs = ps.executeQuery();
+                System.out.println("ID  |" + "NOMBRE" + "| SABOR " + "  | RELLENO");
+
+                while ( rs.next() ) {
+                    String idDataBase = " " + rs.getInt("id");
+                    String nameDatabse = " | " + rs.getString("nombre");
+                    String flavorDataBase = " | " + rs.getString("sabor");
+                    String stuffedDataBase = " | " + rs.getString("relleno");
 
 
-                System.out.println(idDataBase + nameDatabse + flavorDataBase + stuffedDataBase);
+                    System.out.println(idDataBase + nameDatabse + flavorDataBase + stuffedDataBase);
+                }
+            } catch (SQLException e) {
+                System.out.println(e);
             }
+
         } catch (SQLException e) {
             System.out.println(e);
         }
     }
+
 }

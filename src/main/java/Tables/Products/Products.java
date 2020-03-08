@@ -1,24 +1,31 @@
 package Tables.Products;
-import SuperClasses.ManagingDb;
 
-public class Products extends ManagingDb implements ProductsDAO {
+public class Products  {
+    private int id;
+    private String date;
     private String productName;
     private String productFlavor;
     private String productStuffed;
 
 
-    @Override
-    public void create() {
-        createData();
-    }
-
-    @Override
-    public void read() {
-        readData();
-    }
-
-
     // getters and setters
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
     public String getProductName() {
         return productName;
     }

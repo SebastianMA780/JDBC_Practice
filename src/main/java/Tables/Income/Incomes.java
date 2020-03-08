@@ -1,24 +1,31 @@
 package Tables.Income;
-import SuperClasses.ManagingDb;
-import Tables.Products.Products;
 
-public class Incomes extends ManagingDb implements IncomesDAO {
+public class Incomes {
+    private int id;
+    private String date;
     private int portion;
     private int amount;
     private int product_id;
 
-    @Override
-    public void create() {
-        createData();
-    }
-
-    @Override
-    public void read() {
-        readData();
-    }
-
-
     //getters and setters
+
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
     public int getPortion() {
         return portion;
     }
@@ -42,6 +49,4 @@ public class Incomes extends ManagingDb implements IncomesDAO {
     public void setProduct_id(int product_id) {
         this.product_id = product_id;
     }
-
-
 }

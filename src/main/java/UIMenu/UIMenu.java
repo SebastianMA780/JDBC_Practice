@@ -1,13 +1,21 @@
 package UIMenu;
 import Tables.CashFlow.CashFlow;
+import Tables.CashFlow.CashFlowDaoImp;
 import Tables.Expenses.Expenses;
+import Tables.Expenses.ExpensesDaoImp;
 import Tables.Income.Incomes;
+import Tables.Income.IncomesDaoImp;
 import Tables.Materials.Materials;
+import Tables.Materials.MaterialsDaoImp;
 import Tables.Products.Products;
+import Tables.Products.ProductsDaoImp;
 import Tables.Suppliers.Suppliers;
+import Tables.Suppliers.SuppliersDaoImp;
+import TablesDAO.ITablesDao;
+
 import java.util.Scanner;
 
-public class UIMenu {
+public class UIMenu  {
     public Scanner sc = new Scanner(System.in);
 
     public void PrintMenu() {
@@ -41,13 +49,13 @@ public class UIMenu {
                 case 1:
                     PrintMenu();
                     optionInnerMenu = sc.nextInt();
-                    CashFlow cashFlow = new CashFlow();
+                    ITablesDao cashFlow = new CashFlowDaoImp();
                     switch (optionInnerMenu) {
                         case 1:
-                            cashFlow.create();
+                            cashFlow.createData();
                             break;
                         case 2:
-                            cashFlow.read();
+                            cashFlow.readData();
                             break;
                         case 3:
                             System.out.println("Updating");
@@ -62,13 +70,13 @@ public class UIMenu {
                 case 2:
                     PrintMenu();
                     optionInnerMenu = sc.nextInt();
-                    Incomes income = new Incomes();
+                    ITablesDao income = new IncomesDaoImp();
                     switch (optionInnerMenu) {
                         case 1:
-                            income.create();
+                            income.createData();
                             break;
                         case 2:
-                            income.read();
+                            income.readData();
                             break;
                         case 3:
                             System.out.println("Updating");
@@ -83,13 +91,13 @@ public class UIMenu {
                 case 3:
                     PrintMenu();
                     optionInnerMenu = sc.nextInt();
-                    Products product = new Products();
+                    ITablesDao product = new ProductsDaoImp();
                     switch (optionInnerMenu) {
                         case 1:
-                            product.create();
+                            product.createData();
                             break;
                         case 2:
-                            product.read();
+                            product.readData();
                             break;
                         case 3:
                             System.out.println("Updating");
@@ -104,13 +112,13 @@ public class UIMenu {
                 case 4:
                     PrintMenu();
                     optionInnerMenu = sc.nextInt();
-                    Expenses expense = new Expenses();
+                    ITablesDao expense = new ExpensesDaoImp();
                     switch (optionInnerMenu) {
                         case 1:
-                            expense.create();
+                            expense.createData();
                             break;
                         case 2:
-                            expense.read();
+                            expense.readData();
                             break;
                         case 3:
                             System.out.println("Updating");
@@ -125,13 +133,13 @@ public class UIMenu {
                 case 5:
                     PrintMenu();
                     optionInnerMenu = sc.nextInt();
-                    Materials material = new Materials();
+                    ITablesDao material = new MaterialsDaoImp();
                     switch (optionInnerMenu) {
                         case 1:
-                            material.create();
+                            material.createData();
                             break;
                         case 2:
-                            material.read();
+                            material.readData();
                             break;
                         case 3:
                             System.out.println("Updating");
@@ -146,13 +154,13 @@ public class UIMenu {
                 case 6:
                     PrintMenu();
                     optionInnerMenu = sc.nextInt();
-                    Suppliers supplier = new Suppliers();
+                    ITablesDao supplier = new SuppliersDaoImp();
                     switch (optionInnerMenu) {
                         case 1:
-                            supplier.create();
+                            supplier.createData();
                             break;
                         case 2:
-                            supplier.read();
+                            supplier.readData();
                             break;
                         case 3:
                             System.out.println("Updating");

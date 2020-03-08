@@ -1,14 +1,20 @@
 package Tables.Expenses;
-import SuperClasses.TablesDAO;
 import Tables.Materials.Materials;
+import Tables.Materials.MaterialsDaoImp;
+import Tables.Suppliers.Suppliers;
+import TablesDAO.ITablesDao;
+
 import java.sql.*;
 import java.util.Scanner;
+import Connection.DBConnection;
 
-public interface ExpensesDAO extends TablesDAO {
+public class ExpensesDaoImp implements DBConnection, ITablesDao {
+    PreparedStatement ps = null;
+    ResultSet rs = null;
 
-    @Override
-    default void createDataParameters(Connection connection, PreparedStatement ps) {
-        try {
+    public void createData() {
+
+        try (Connection connection = get_connection()) {
             Scanner sc = new Scanner(System.in);
             System.out.println("Ingrese la cantidad del material");
             String quantity = sc.nextLine();
@@ -16,8 +22,9 @@ public interface ExpensesDAO extends TablesDAO {
             System.out.println("Ingrese el valor pagado");
             int amount = sc.nextInt();
 
-            Materials material = new Materials();
+            ITablesDao material = new MaterialsDaoImp();
             System.out.println("Ingrese el id del material, encontrará la guia en la tabla de abajo /type 0 to set it Null");
+            material.readData();
             int material_id = sc.nextInt();
 
             Expenses expense = new Expenses();
@@ -42,23 +49,29 @@ public interface ExpensesDAO extends TablesDAO {
             System.out.println(e);
         }
     }
+    public void readData() {
 
-    @Override
-    default void readDataParameters(Connection connection, PreparedStatement ps, ResultSet rs) {
-        try {
-            String query = "SELECT * FROM `gastos`";
-            ps = connection.prepareStatement(query);
-            rs = ps.executeQuery();
-            System.out.println(" ID  |" + "   FECHA" + "           | CANT  |" + " VALOR");
+        try ( Connection connection = get_connection() ) {
 
-            while ( rs.next() ) {
-                String idDataBase = " " + rs.getInt("id");
-                String dateDatabse = " | " + rs.getString("fecha");
-                String quantityDataBase = " | " + rs.getString("cantidad");
-                String amountDataBase = " | " + rs.getString("valor");
+            try {
 
-                System.out.println(idDataBase + dateDatabse + quantityDataBase + amountDataBase);
+                String query = "SELECT * FROM `gastos`";
+                ps = connection.prepareStatement(query);
+                rs = ps.executeQuery();
+                System.out.println(" ID  |" + "   FECHA" + "           | CANT  |" + " VALOR");
+
+                while ( rs.next() ) {
+                    String idDataBase = " " + rs.getInt("id");
+                    String dateDatabse = " | " + rs.getString("fecha");
+                    String quantityDataBase = " | " + rs.getString("cantidad");
+                    String amountDataBase = " | " + rs.getString("valor");
+
+                    System.out.println(idDataBase + dateDatabse + quantityDataBase + amountDataBase);
+                }
+            } catch (SQLException e) {
+                System.out.println(e);
             }
+
         } catch (SQLException e) {
             System.out.println(e);
         }

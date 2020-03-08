@@ -1,24 +1,28 @@
 package Tables.CashFlow;
-import SuperClasses.TablesDAO;
-import Tables.Expenses.Expenses;
-import Tables.Income.Incomes;
+import Tables.Expenses.ExpensesDaoImp;
+import Tables.Income.IncomesDaoImp;
+import TablesDAO.ITablesDao;
 import java.sql.*;
 import java.util.Scanner;
+import Connection.DBConnection;
 
-public interface CashFlowDAO extends TablesDAO {
-    @Override
-    default void createDataParameters(Connection connection, PreparedStatement ps) {
-        try {
+public class CashFlowDaoImp implements DBConnection, ITablesDao {
+    PreparedStatement ps = null;
+    ResultSet rs = null;
+
+    public void createData() {
+
+        try (Connection connection = get_connection()) {
             Scanner sc = new Scanner(System.in);
 
-            Incomes income = new Incomes();
+            ITablesDao income = new IncomesDaoImp();
             System.out.println("Ingresa el id del ingreso registrado, encontras la guia aqui abajo /type 0 for set it Null");
-            income.read();
+            income.readData();
             int income_id = sc.nextInt();
 
-            Expenses expense = new Expenses();
+            ITablesDao expense = new ExpensesDaoImp();
             System.out.println("Ingresa el id del gasto realizado, encontraras la guia aqui abajo/type 0 for set it Null");
-            expense.read();
+            expense.readData();
             int expense_id = sc.nextInt();
 
             System.out.println("Ingresa el nuevo saldo de la caja");
@@ -46,28 +50,34 @@ public interface CashFlowDAO extends TablesDAO {
 
             ps.executeUpdate();
             System.out.println("EL flujo de caja ha sido actualizado");
+
         } catch (SQLException e) {
             System.out.println(e);
         }
-
     }
+    public void readData() {
 
-    @Override
-    default void readDataParameters(Connection connection, PreparedStatement ps, ResultSet rs) {
-        try {
-            String query = "SELECT * FROM `flujo_caja`";
-            ps = connection.prepareStatement(query);
-            rs = ps.executeQuery();
-            System.out.println("ID |" + "       FECHA" + "         | SALDO  ");
+        try ( Connection connection = get_connection() ) {
 
-            while ( rs.next() ) {
-                String idDataBase = " " + rs.getInt("id");
-                String dateDatabse = " | " + rs.getString("fecha");
-                String balanceDataBase = " | " + rs.getString("saldo");
+            try {
 
-                System.out.println( idDataBase + dateDatabse + balanceDataBase );
+                String query = "SELECT * FROM `flujo_caja`";
+                ps = connection.prepareStatement(query);
+                rs = ps.executeQuery();
+                System.out.println("ID |" + "       FECHA" + "         | SALDO  ");
+
+                while ( rs.next() ) {
+                    String idDataBase = " " + rs.getInt("id");
+                    String dateDatabse = " | " + rs.getString("fecha");
+                    String balanceDataBase = " | " + rs.getString("saldo");
+
+                    System.out.println( idDataBase + dateDatabse + balanceDataBase );
+                }
+            } catch (SQLException e) {
+                System.out.println(e);
             }
-        } catch (SQLException e){
+
+        } catch (SQLException e) {
             System.out.println(e);
         }
     }

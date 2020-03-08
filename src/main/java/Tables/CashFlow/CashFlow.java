@@ -1,26 +1,31 @@
 package Tables.CashFlow;
-import Tables.Expenses.Expenses;
-import Tables.Income.Incomes;
-import SuperClasses.ManagingDb;
 
-public class CashFlow extends ManagingDb implements CashFlowDAO {
+public class CashFlow  {
+
+    private int id;
+    private String date;
     private int balance;
     private int income_id;
     private int expense_id;
 
-    @Override
-    public void create() {
-        createData();
-    }
-
-    @Override
-    public void read() {
-        readData();
-    }
-
-
-
     //getters and setters
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
     public int getBalance() {
         return balance;
     }
@@ -44,6 +49,4 @@ public class CashFlow extends ManagingDb implements CashFlowDAO {
     public void setExpense_id(int expense_id) {
         this.expense_id = expense_id;
     }
-
-
 }

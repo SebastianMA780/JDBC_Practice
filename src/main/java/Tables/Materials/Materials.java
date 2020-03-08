@@ -1,23 +1,29 @@
 package Tables.Materials;
-import SuperClasses.ManagingDb;
-import Tables.Suppliers.Suppliers;
 
-public class Materials extends ManagingDb implements MaterialsDAO{
+public class Materials {
+    private int id;
+    private String date;
     private String productName;
     private int supplier_id;
 
-    @Override
-    public void create() {
-        createData();
-    }
-
-    @Override
-    public void read() {
-        readData();
-    }
-
-
     //getters and setters
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
     public String getProductName() {
         return productName;
     }
@@ -33,6 +39,4 @@ public class Materials extends ManagingDb implements MaterialsDAO{
     public void setSupplier_id(int supplier_id) {
         this.supplier_id = supplier_id;
     }
-
-
 }

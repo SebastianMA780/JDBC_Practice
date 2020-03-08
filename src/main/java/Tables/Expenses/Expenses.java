@@ -1,23 +1,32 @@
 package Tables.Expenses;
-import SuperClasses.ManagingDb;
-import Tables.Materials.Materials;
 
-public class Expenses extends ManagingDb implements ExpensesDAO {
+public class Expenses  {
+    private int id;
+    private String date;
     private String quantity;
     private int amount;
     private int material_id;
 
-    @Override
-    public void create() {
-        createData();
-    }
-
-    @Override
-    public void read() {
-        readData();
-    }
 
     //getters and setters
+
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
     public String getQuantity() {
         return quantity;
     }
@@ -41,6 +50,4 @@ public class Expenses extends ManagingDb implements ExpensesDAO {
     public void setMaterial_id(int material_id) {
         this.material_id = material_id;
     }
-
-
 }

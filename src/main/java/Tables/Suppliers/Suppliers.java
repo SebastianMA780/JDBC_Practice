@@ -1,22 +1,30 @@
 package Tables.Suppliers;
-import SuperClasses.ManagingDb;
 
-public class Suppliers extends ManagingDb implements SuppliersDAO {
+public class Suppliers {
+    private int id;
+    private String date;
     private String supplierName;
     private int phoneSupplier;
 
-    @Override
-    public void create() {
-        createData();
-    }
-
-    @Override
-    public void read() {
-        readData();
-    }
-
 
 //getters and setters
+
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
 
     public String getSupplierName() {
         return supplierName;
@@ -33,6 +41,4 @@ public class Suppliers extends ManagingDb implements SuppliersDAO {
     public void setPhoneSupplier(int phoneSupplier) {
         this.phoneSupplier = phoneSupplier;
     }
-
-
 }
