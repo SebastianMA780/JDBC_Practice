@@ -3,23 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="5d970516-acb2-4abc-9d79-acfbcebd1e79" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SuperClasses/ManagingDb.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SuperClasses/TablesDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tables/CashFlow/CashFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tables/CashFlow/CashFlow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tables/CashFlow/CashFlowDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tables/Expenses/Expenses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tables/Expenses/Expenses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tables/Expenses/ExpensesDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tables/Income/Incomes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tables/Income/Incomes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tables/Income/IncomesDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tables/Materials/Materials.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tables/Materials/Materials.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tables/Materials/MaterialsDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tables/Products/Products.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tables/Products/Products.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tables/Products/ProductsDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tables/Suppliers/Suppliers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tables/Suppliers/Suppliers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tables/Suppliers/SuppliersDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UIMenu/UIMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UIMenu/UIMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SuperClasses/ManagingDb.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SuperClasses/ManagingDb.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/UIMenu/UIMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/UIMenu/UIMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Connection/DataBaseConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Connection/DataBaseConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/Dolce_Canela.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Tables/Expenses/ExpensesDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Tables/Expenses/ExpensesDaoImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Tables/Income/IncomesDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Tables/Income/IncomesDaoImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Tables/Products/ProductsDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Tables/Products/ProductsDaoImp.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +32,6 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -117,33 +104,37 @@
     </state>
     <state x="2138" y="294" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1583701567430" />
     <state x="2138" y="294" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1583701718516" />
-    <state width="1878" height="923" key="GridCell.Tab.0.bottom" timestamp="1583704562028">
-      <screen x="1440" y="0" width="1920" height="1080" />
+    <state width="1878" height="896" key="GridCell.Tab.0.bottom" timestamp="1590108592177">
+      <screen x="1440" y="-84" width="1920" height="1080" />
     </state>
     <state width="1398" height="715" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.-84.1920.1080@0.0.1440.900" timestamp="1583361931975" />
+    <state width="1878" height="896" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.-84.1920.1080@1440.-84.1920.1080" timestamp="1590108592177" />
     <state width="1398" height="284" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1582236526890" />
-    <state width="1878" height="923" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1583704562028" />
+    <state width="1878" height="882" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1584467774763" />
     <state width="1878" height="883" key="GridCell.Tab.0.bottom/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1582594480690" />
-    <state width="1878" height="923" key="GridCell.Tab.0.center" timestamp="1583704562026">
-      <screen x="1440" y="0" width="1920" height="1080" />
+    <state width="1878" height="896" key="GridCell.Tab.0.center" timestamp="1590108592176">
+      <screen x="1440" y="-84" width="1920" height="1080" />
     </state>
     <state width="1398" height="715" key="GridCell.Tab.0.center/0.0.1440.900/1440.-84.1920.1080@0.0.1440.900" timestamp="1583361931973" />
+    <state width="1878" height="896" key="GridCell.Tab.0.center/0.0.1440.900/1440.-84.1920.1080@1440.-84.1920.1080" timestamp="1590108592176" />
     <state width="1398" height="284" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1582236526889" />
-    <state width="1878" height="923" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1583704562026" />
+    <state width="1878" height="882" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1584467774761" />
     <state width="1878" height="883" key="GridCell.Tab.0.center/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1582594480685" />
-    <state width="1878" height="923" key="GridCell.Tab.0.left" timestamp="1583704562024">
-      <screen x="1440" y="0" width="1920" height="1080" />
+    <state width="1878" height="896" key="GridCell.Tab.0.left" timestamp="1590108592175">
+      <screen x="1440" y="-84" width="1920" height="1080" />
     </state>
     <state width="1398" height="715" key="GridCell.Tab.0.left/0.0.1440.900/1440.-84.1920.1080@0.0.1440.900" timestamp="1583361931972" />
+    <state width="1878" height="896" key="GridCell.Tab.0.left/0.0.1440.900/1440.-84.1920.1080@1440.-84.1920.1080" timestamp="1590108592175" />
     <state width="1398" height="284" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1582236526888" />
-    <state width="1878" height="923" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1583704562024" />
+    <state width="1878" height="882" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1584467774760" />
     <state width="1878" height="883" key="GridCell.Tab.0.left/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1582594480682" />
-    <state width="1878" height="923" key="GridCell.Tab.0.right" timestamp="1583704562027">
-      <screen x="1440" y="0" width="1920" height="1080" />
+    <state width="1878" height="896" key="GridCell.Tab.0.right" timestamp="1590108592177">
+      <screen x="1440" y="-84" width="1920" height="1080" />
     </state>
     <state width="1398" height="715" key="GridCell.Tab.0.right/0.0.1440.900/1440.-84.1920.1080@0.0.1440.900" timestamp="1583361931973" />
+    <state width="1878" height="896" key="GridCell.Tab.0.right/0.0.1440.900/1440.-84.1920.1080@1440.-84.1920.1080" timestamp="1590108592177" />
     <state width="1398" height="284" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1582236526889" />
-    <state width="1878" height="923" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1583704562027" />
+    <state width="1878" height="882" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1584467774762" />
     <state width="1878" height="883" key="GridCell.Tab.0.right/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1582594480686" />
     <state width="1878" height="923" key="GridCell.Tab.1.bottom" timestamp="1583704562032">
       <screen x="1440" y="0" width="1920" height="1080" />
@@ -173,6 +164,10 @@
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
     <state x="2126" y="435" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1582073705311" />
+    <state x="1829" y="251" key="new project wizard" timestamp="1584916756750">
+      <screen x="1440" y="23" width="1920" height="1057" />
+    </state>
+    <state x="1829" y="251" key="new project wizard/0.23.1440.808/1440.23.1920.1057@1440.23.1920.1057" timestamp="1584916756750" />
     <state x="2110" y="159" key="refactoring.ChangeSignatureDialog" timestamp="1582160093721">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
