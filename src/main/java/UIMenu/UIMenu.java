@@ -1,15 +1,9 @@
 package UIMenu;
-import Tables.CashFlow.CashFlow;
 import Tables.CashFlow.CashFlowDaoImp;
-import Tables.Expenses.Expenses;
 import Tables.Expenses.ExpensesDaoImp;
-import Tables.Income.Incomes;
 import Tables.Income.IncomesDaoImp;
-import Tables.Materials.Materials;
 import Tables.Materials.MaterialsDaoImp;
-import Tables.Products.Products;
 import Tables.Products.ProductsDaoImp;
-import Tables.Suppliers.Suppliers;
 import Tables.Suppliers.SuppliersDaoImp;
 import TablesDAO.ITablesDao;
 

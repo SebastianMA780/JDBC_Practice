@@ -1,12 +1,10 @@
 package Tables.CashFlow;
 
-public class CashFlow  {
+public class CashFlow {
 
     private int id;
     private String date;
     private int balance;
-    private int income_id;
-    private int expense_id;
 
     //getters and setters
 
@@ -32,21 +30,5 @@ public class CashFlow  {
 
     public void setBalance(int balance) {
         this.balance = balance;
-    }
-
-    public int getIncome_id() {
-        return income_id;
-    }
-
-    public void setIncome_id(int income_id) {
-        this.income_id = income_id;
-    }
-
-    public int getExpense_id() {
-        return expense_id;
-    }
-
-    public void setExpense_id(int expense_id) {
-        this.expense_id = expense_id;
     }
 }

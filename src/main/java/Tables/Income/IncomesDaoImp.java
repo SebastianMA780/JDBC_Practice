@@ -17,6 +17,9 @@ public class IncomesDaoImp implements DBConnection, ITablesDao {
         try (Connection connection = get_connection()) {
 
             Scanner sc = new Scanner(System.in);
+            System.out.println("Ingrese la fecha (yyyy-mm-dd)");
+            String date = sc.nextLine();
+
             System.out.println("Ingrese la porciones del producto");
             int portion = sc.nextInt();
 
@@ -29,17 +32,19 @@ public class IncomesDaoImp implements DBConnection, ITablesDao {
             int product_id = sc.nextInt();
 
             Incomes income = new Incomes();
+            income.setDate(date);
             income.setPortion(portion);
             income.setAmount(amount);
             income.setProduct_id(product_id);
 
-            String query = "INSERT INTO `ingresos` (`porciones`,`valor`,`producto_id`) VALUES (?, ?, ?)";
+            String query = "INSERT INTO `ingresos` (`fecha`,`porciones`,`valor`,`producto_id`) VALUES (?,?, ?,?)";
             ps = connection.prepareStatement(query);
-            ps.setInt(1, income.getPortion());
-            ps.setInt(2, income.getAmount());
-            ps.setInt(3, income.getProduct_id());
+            ps.setString(1, income.getDate());
+            ps.setInt(2, income.getPortion());
+            ps.setInt(3, income.getAmount());
+            ps.setInt(4, income.getProduct_id());
             ps.executeUpdate();
-            System.out.println("Su ganancia ha sido registrado");
+            System.out.println("Su ganancia ha sido registrada");
 
         } catch (SQLException e) {
             System.out.println(e);

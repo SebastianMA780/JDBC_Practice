@@ -13,6 +13,9 @@ public class ExpensesDaoImp implements DBConnection, ITablesDao {
 
         try (Connection connection = get_connection()) {
             Scanner sc = new Scanner(System.in);
+            System.out.println("Ingrese la fecha (yyyy-mm-dd)");
+            String date = sc.nextLine();
+
             System.out.println("Ingrese la cantidad del material");
             String quantity = sc.nextLine();
 
@@ -25,19 +28,21 @@ public class ExpensesDaoImp implements DBConnection, ITablesDao {
             int material_id = sc.nextInt();
 
             Expenses expense = new Expenses();
+            expense.setDate(date);
             expense.setQuantity(quantity);
             expense.setAmount(amount);
             expense.setMaterial_id(material_id);
 
-            String query = "INSERT INTO `gastos` (`cantidad`,`valor`,`material_id`) VALUES (?, ?, ?)";
+            String query = "INSERT INTO `gastos` (`fecha`,`cantidad`,`valor`,`material_id`) VALUES (?,?, ?, ?)";
             ps = connection.prepareStatement(query);
-            ps.setString(1, expense.getQuantity());
-            ps.setInt(2, expense.getAmount());
+            ps.setString(1, expense.getDate());
+            ps.setString(2, expense.getQuantity());
+            ps.setInt(3, expense.getAmount());
 
             if ( expense.getMaterial_id() == 0) {
-                ps.setNull(3, Types.VARCHAR);
+                ps.setNull(4, Types.VARCHAR);
             } else {
-                ps.setInt(3, expense.getMaterial_id());
+                ps.setInt(4, expense.getMaterial_id());
             }
 
             ps.executeUpdate();

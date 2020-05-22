@@ -1,0 +1,7 @@
+.idea
+.settings
+/resources
+target
+CodingTest.iml
+.classpath
+.project
