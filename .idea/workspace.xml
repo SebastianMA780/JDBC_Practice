@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5d970516-acb2-4abc-9d79-acfbcebd1e79" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tables/CashFlow/CashFlowD_B_Manage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tables/CashFlow/CashFlowD_B_Manage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tables/Expenses/ExpensesD_B_Manage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tables/Expenses/ExpensesD_B_Manage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tables/Income/IncomesD_B_Manage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tables/Income/IncomesD_B_Manage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tables/Materials/MaterialsD_B_Manage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tables/Materials/MaterialsD_B_Manage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tables/Suppliers/SuppliersD_B_Manage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tables/Suppliers/SuppliersD_B_Manage.java" afterDir="false" />
-    </list>
+    <list default="true" id="5d970516-acb2-4abc-9d79-acfbcebd1e79" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,7 +24,6 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
