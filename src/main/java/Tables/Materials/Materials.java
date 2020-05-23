@@ -1,34 +1,29 @@
 package Tables.Materials;
-import Tables.ManagingDb;
-import Tables.Suppliers.Suppliers;
 
-import java.util.Scanner;
-
-public class Materials extends ManagingDb {
-    String productName;
-    int supplier_id;
-
-    public static void create() {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Ingrese el nombre del producto");
-        String productName = sc.nextLine();
-
-        System.out.println("Ingrese el id del Proveedor correspondiente en la tabla que vera abajo");
-        Suppliers.read();
-        int supplier_id = sc.nextInt();
-
-        Materials material = new Materials();
-        material.setProductName(productName);
-        material.setSupplier_id(supplier_id);
-
-        MaterialsD_B_Manage.createData(material);
-    }
-
-    public static void read() {
-        MaterialsD_B_Manage.readData();
-    }
+public class Materials {
+    private int id;
+    private String date;
+    private String productName;
+    private int supplier_id;
 
     //getters and setters
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
     public String getProductName() {
         return productName;
     }

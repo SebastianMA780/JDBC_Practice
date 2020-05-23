@@ -1,37 +1,30 @@
 package Tables.Products;
-import Tables.ManagingDb;
 
-import java.util.Scanner;
-
-public class Products extends ManagingDb {
-    String productName;
-    String productFlavor;
-    String productStuffed;
-
-    public static void create() {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Ingrese el nombre del producto");
-        String productName = sc.nextLine();
-
-        System.out.println("Ingrese el sabor del producto");
-        String productFlavor = sc.nextLine();
-
-        System.out.println("Ingrese el sabor del producto");
-        String productStuffed = sc.nextLine();
-
-        Products product = new Products();
-       product.setProductName(productName);
-       product.setProductFlavor(productFlavor);
-       product.setProductStuffed(productStuffed);
-
-        ProductsD_B_Manage.createData(product);
-    }
-
-    public static void read() {
-        ProductsD_B_Manage.readData();
-    }
+public class Products  {
+    private int id;
+    private String date;
+    private String productName;
+    private String productFlavor;
+    private String productStuffed;
 
     // getters and setters
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
     public String getProductName() {
         return productName;
     }

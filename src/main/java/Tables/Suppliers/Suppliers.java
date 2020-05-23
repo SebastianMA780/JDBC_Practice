@@ -1,33 +1,28 @@
 package Tables.Suppliers;
-import Tables.ManagingDb;
 
-import java.util.Scanner;
-
-public class Suppliers extends ManagingDb {
-    String supplierName;
-    int phoneSupplier;
-
-
-    public static void create() {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Ingrese el nombre del proveedor");
-        String supplierName = sc.nextLine();
-
-        System.out.println("Ingrese el telefono");
-        int phoneSupplier = sc.nextInt();
-
-        Suppliers supplier = new Suppliers();
-        supplier.setSupplierName(supplierName);
-        supplier.setPhoneSupplier(phoneSupplier);
-
-        SuppliersD_B_Manage.createData(supplier);
-    }
-
-    public static void read() {
-        SuppliersD_B_Manage.readData();
-    }
+public class Suppliers {
+    private int id;
+    private String date;
+    private String supplierName;
+    private int phoneSupplier;
 
 //getters and setters
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
 
     public String getSupplierName() {
         return supplierName;
